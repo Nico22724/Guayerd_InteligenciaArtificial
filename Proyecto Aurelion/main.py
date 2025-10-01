@@ -2,6 +2,23 @@ import re
 
 contenido = "## "
 
+def value_correct(mensaje):
+    while True:
+        entrada = input(mensaje)  
+        try:
+            return int(entrada)   
+        except ValueError:
+            print("❌ El valor ingresado debe ser numérico")
+
+def index_correct(lista, mensaje):
+    while True:
+        opcion = value_correct(mensaje)  # validamos que sea número
+        if 0 <= opcion <= len(lista):   # validamos rango válido
+            return opcion
+        else:
+            print(f"❌ Debe ingresar un número entre 1 y {len(lista)} o 0 si desea salir del menu")
+
+
 def leer_contenido():
     """Lee todo el contenido del archivo Markdown."""
     with open("Documento.md", "r", encoding="utf-8") as archivo:
@@ -14,17 +31,6 @@ def mostrar_menu():
     for i, sub in enumerate(secciones, start=1):
                     print(f"{i}. {sub}")
 
-def mostrar_subtitulos(subtitulos, bloque):
-    while True:
-        print("\nConsulte el registro deseado")
-        for i, sub in enumerate(subtitulos, start=1):
-            print(f"{i}. {sub}")
-        opcion_sub = int(input("\nSeleccione una opción o 0 para volver al menú principal: "))
-        if opcion_sub == 0:
-            break
-        option_list(opcion_sub, subtitulos, bloque)
-        input("\nPresione Enter para continuar...")
-            
 
 def mostrar_seccion(nombre):
     """Muestra el contenido de una sección ## (Tema, Problema, Solución)."""
@@ -45,6 +51,19 @@ def mostrar_seccion(nombre):
         mostrar_subtitulos(subtitulos, bloque)
     else:
         print(f"No se encontró la sección {nombre}.")
+
+
+def mostrar_subtitulos(subtitulos, bloque):
+    while True:
+        print("\nConsulte el registro deseado")
+        for i, sub in enumerate(subtitulos, start=1):
+            print(f"{i}. {sub}")
+        opcion_sub = index_correct(subtitulos,"\nSeleccione una opción o 0 para volver al menú principal: ")
+        if opcion_sub == 0:
+            break
+        option_list(opcion_sub, subtitulos, bloque)
+        input("\nPresione Enter para continuar...")
+            
 
 
 def option_list(num_list, subtitulos, bloque):

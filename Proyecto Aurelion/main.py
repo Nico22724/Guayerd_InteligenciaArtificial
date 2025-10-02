@@ -41,7 +41,7 @@ def mostrar_seccion(nombre):
     )
     
     
-    bloque = match.group(1).strip()
+    bloque = match.group(1).strip() # type: ignore
     subtitulos = re.findall(r"^### ([^\#].*)", bloque, re.MULTILINE)
     
     if not subtitulos:

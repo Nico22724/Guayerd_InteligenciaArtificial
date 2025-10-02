@@ -1,7 +1,5 @@
 import re
 
-contenido = "## "
-
 def value_correct(mensaje):
     while True:
         entrada = input(mensaje)  
@@ -24,20 +22,21 @@ def leer_contenido():
     with open("Documento.md", "r", encoding="utf-8") as archivo:
         return archivo.read()
 
-
-def mostrar_menu():
+def secciones_menu():
     contenido = leer_contenido()
     secciones = re.findall(r"^## (.+)", contenido, re.MULTILINE)
-    for i, sub in enumerate(secciones, start=1):
+    return secciones
+
+def mostrar_menu():
+    for i, sub in enumerate(secciones_menu(), start=1):
                     print(f"{i}. {sub}")
 
 
 def mostrar_seccion(nombre):
     """Muestra el contenido de una sección ## (Tema, Problema, Solución)."""
     contenido = leer_contenido()
-    secciones = re.findall(r"^## (.+)", contenido, re.MULTILINE)
     match = re.search(
-    fr"## {re.escape(secciones[nombre - 1])}\n([\s\S]*?)(?=\n## |\Z)", 
+    fr"## {re.escape(secciones_menu()[nombre - 1])}\n([\s\S]*?)(?=\n## |\Z)", 
     contenido
     )
     
@@ -52,6 +51,7 @@ def mostrar_seccion(nombre):
     else:
         print(f"No se encontró la sección {nombre}.")
 
+    input("\nPresione Enter para volver al menú...")
 
 def mostrar_subtitulos(subtitulos, bloque):
     while True:
@@ -83,13 +83,15 @@ def option_list(num_list, subtitulos, bloque):
 print("Bienvenido al Proyecto Aurelion")
 
 while True:
-    print("\nMenú de opciones:")
-    mostrar_menu()
+    if secciones_menu():
+        print("\nMenú de opciones:")
+        mostrar_menu()
 
-    opcion = int(input("Seleccione una opción (1-4) o '0' para terminar: "))
+        opcion = index_correct(secciones_menu(),"Seleccione una opción o '0' para terminar: ")
+        
+        if opcion == 0:
+            break
     
-    if opcion == 0:
-        break
-  
-    mostrar_seccion(opcion)
-    input("\nPresione Enter para volver al menú...")
+        mostrar_seccion(opcion)
+    else:
+        print("No hay contenido dentro del documento.md para mostrar")

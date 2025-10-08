@@ -31,47 +31,47 @@ La solución combina análisis de datos para identificar baja rotación y polít
 ---
 
 ### 📌 Clientes
-| Registro    | Tipo   | Escala    |
-|-------------|--------|-----------|
-| Id_cliente  | Numérico | Razón    |
-| Nombre      | Texto  | Nominal   |
-| Email       | Texto  | Nominal   |
-| Ciudad      | Texto  | Nominal   |
-| Fecha_alta  | Texto  | Intervalo |
+| Registro    | Tipo     | Escala      | Definición |
+|-------------|----------|-------------|------------|
+| Id_cliente  | Numérico | Razón       | Identificador único del cliente |
+| Nombre      | Texto    | Nominal     | Nombre completo del cliente |
+| Email       | Texto    | Nominal     | Correo electrónico del cliente |
+| Ciudad      | Texto    | Nominal     | Ciudad de residencia del cliente |
+| Fecha_alta  | Texto    | Intervalo   | Fecha de registro del cliente |
 
 ---
 
 ### 📌 Detalle_ventas
-| Registro        | Tipo   | Escala    |
-|-----------------|--------|-----------|
-| Id_venta        | Numérico | Razón    |
-| Id_producto     | Numérico | Razón    |
-| Nombre_producto | Texto  | Nominal   |
-| Cantidad        | Numérico | Razón    |
-| Precio_unitario | Numérico | Razón    |
-| Importe         | Numérico | Razón    |
+| Registro        | Tipo     | Escala    | Definición |
+|-----------------|----------|-----------|------------|
+| Id_venta        | Numérico | Razón     | Identificador único de la venta |
+| Id_producto     | Numérico | Razón     | Identificador único del producto vendido |
+| Nombre_producto | Texto    | Nominal   | Nombre del producto vendido |
+| Cantidad        | Numérico | Razón     | Número de unidades vendidas |
+| Precio_unitario | Numérico | Razón     | Precio por unidad del producto |
+| Importe         | Numérico | Razón     | Importe total de la línea de venta |
 
 ---
 
 ### 📌 Productos
-| Registro        | Tipo   | Escala    |
-|-----------------|--------|-----------|
-| Id_producto     | Numérico | Razón    |
-| Nombre_producto | Texto  | Nominal   |
-| Categoria       | Texto  | Nominal   |
-| Precio_unitario | Numérico | Razón    |
+| Registro        | Tipo     | Escala   | Definición |
+|-----------------|----------|----------|------------|
+| Id_producto     | Numérico | Razón    | Identificador único del producto |
+| Nombre_producto | Texto    | Nominal  | Nombre del producto |
+| Categoria       | Texto    | Nominal  | Categoría a la que pertenece el producto |
+| Precio_unitario | Numérico | Razón    | Precio por unidad del producto |
 
 ---
 
 ### 📌 Ventas
-| Registro       | Tipo   | Escala    |
-|----------------|--------|-----------|
-| Id_venta       | Numérico | Razón    |
-| Fecha          | Texto  | Intervalo |
-| Id_cliente     | Numérico | Razón    |
-| Nombre_cliente | Texto  | Nominal   |
-| Email          | Texto  | Nominal   |
-| Medio_pago     | Texto  | Nominal   |
+| Registro       | Tipo     | Escala    | Definición |
+|----------------|--------- |-----------|------------|
+| Id_venta       | Numérico | Razón     | Identificador único de la venta |
+| Fecha          | Texto    | Intervalo | Fecha en que se realizó la venta |
+| Id_cliente     | Numérico | Razón     | Identificador único del cliente |
+| Nombre_cliente | Texto    | Nominal   | Nombre completo del cliente |
+| Email          | Texto    | Nominal   | Correo electrónico del cliente |
+| Medio_pago     | Texto    | Nominal   | Forma de pago utilizada |
 
 ---
 

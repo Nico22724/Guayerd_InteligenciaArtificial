@@ -29,7 +29,7 @@ def secciones_menu():
 
 def mostrar_menu():
     for i, sub in enumerate(secciones_menu(), start=1):
-                    print(f"{i}. {sub}")
+        print(f"{i}. {sub}")
 
 
 def mostrar_seccion(nombre):

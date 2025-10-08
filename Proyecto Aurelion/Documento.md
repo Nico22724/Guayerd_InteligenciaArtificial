@@ -1,13 +1,13 @@
 # Proyecto Tienda Aurelion
 
 ---
-
-## Tema
+## Tema, Problema, Solucion
+### Tema
 #### Control eficaz del inventario
 
 ---
 
-## Problema
+### Problema
 #### Stock excedente de los productos menos vendidos
 
 El exceso de inventario en productos de baja rotación genera costos ocultos:  
@@ -21,7 +21,7 @@ almacenamiento, deterioro, obsolescencia y capital inmovilizado. Además, puede 
 
 ---
 
-## Solución
+### Solución
 #### Identificar los productos menos vendidos y maximizar el correcto abastecimiento
 
 La solución combina análisis de datos para identificar baja rotación y políticas de abastecimiento que eviten acumulación y aseguren disponibilidad de los productos con mayor demanda.

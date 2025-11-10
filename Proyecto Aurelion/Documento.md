@@ -214,3 +214,10 @@ Fin
                                                   │
                                                   ▼
                                (Regresa al menú principal)
+                               
+## Estadísticas descriptivas básicas calculadas
+## Identificación del tipo de distribución de variables
+## Análisis de correlaciones entre variables principales
+## Detección de outliers (valores extremos)
+## Graficos
+## Interpretación de resultados

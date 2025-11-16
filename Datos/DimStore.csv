@@ -1,0 +1,307 @@
+StoreKey,GeographyKey,StoreManager,StoreType,StoreName,Status,OpenDate,CloseDate,EntityKey,AddressLine1,CloseReason,EmployeeCount,SellingAreaSize
+1,693,35,Almacén,Almacén nº 1 en Seattle de Contoso,Activado,2004-04-12,,635,East Queen Anne Big shopping mall,,17.0,462.0
+2,693,35,Almacén,Almacén nº 2 en Seattle de Contoso,Activado,2004-02-14,,636,Mino shopping mall,,25.0,700.0
+3,856,36,Almacén,Almacén en Kennewick de Contoso,Activado,2004-02-12,,934,"Kennewick,  Downtown",,26.0,680.0
+4,424,37,Almacén,Almacén en Bellevue de Contoso,Activado,2004-03-01,,638,West Lake Hills shopping mall,,19.0,455.0
+5,677,38,Almacén,Almacén en Redmond de Contoso,Activado,2004-04-02,,639,Downtown shopping mall,,33.0,560.0
+6,575,39,Almacén,Almacén en Yakima de Contoso,Activado,2005-05-15,,640,"Yakima, shopping mall",,47.0,1125.0
+7,838,40,Almacén,Almacén en Granger de Contoso,Activado,2004-06-16,,641,"Granger, WA Downtown shopping mall",,22.0,500.0
+8,935,41,Almacén,Almacén en Sunnyside de Contoso,Activado,2004-07-02,,642,"Sunnyside, WA Citycenter",,17.0,460.0
+9,941,42,Almacén,Almacén en Toppenish de Contoso,Activado,2004-08-18,,643,"Toppenish, Citycenter",,25.0,700.0
+10,947,43,Almacén,Almacén en Wapato de Contoso,Activado,2004-09-19,,644,"Wapato, Citycenter",,25.0,700.0
+11,813,44,Almacén,Almacén en Cle Elum de Contoso,Activado,2004-10-20,,645,"Cle Elum, Citycenter",,26.0,680.0
+12,893,45,Almacén,Almacén en North Bend de Contoso,Desactivado,2004-11-21,2009-04-12,646,"North Bend, Citycenter",Relocation,19.0,455.0
+13,930,46,Almacén,Almacén en Snoqualmie de Contoso,Activado,2004-12-22,,647,"Snoqualmie, Citycenter",,33.0,560.0
+14,825,47,Almacén,Almacén en Fall City de Contoso,Activado,2006-01-23,,648,"Fall City, Citycenter",,47.0,1125.0
+15,678,48,Almacén,Almacén en Renton de Contoso,Activado,2004-02-24,,649,"Renton,Citycenter",,22.0,500.0
+16,627,49,Almacén,Almacén en Everett de Contoso,Activado,2004-01-25,,650,Riverside  Ave Shopping mall,,17.0,462.0
+17,551,135,Almacén,Almacén en Spokane de Contoso,Activado,2004-03-26,,651,Logan Ave  Shopping mall          ,,25.0,700.0
+18,944,50,Almacén,Almacén en Veradale de Contoso,Activado,2004-07-27,,652,"Veradale, Citycenter",,26.0,680.0
+19,812,51,Almacén,Almacén en Cheney de Contoso,Desactivado,2004-08-28,2009-05-12,653,Cheney DownTown Shopping mall    ,Store,19.0,455.0
+20,824,52,Almacén,Almacén en Englewood de Contoso,Activado,2004-09-29,,654,Cherry Hills Village Shopping mall               ,,33.0,560.0
+21,950,66,Almacén,Almacén en Wheat Ridge de Contoso,Activado,2004-11-02,,655,"Wheat Ridge, CityCenter              ",,47.0,1125.0
+22,571,54,Almacén,Almacén en Westminster de Contoso,Activado,2004-12-03,,656,South Central Shopping mall ,,22.0,500.0
+23,836,55,Almacén,Almacén en Grand Junction de Contoso,Activado,2004-01-24,,657,Grand Junction Downtown,,17.0,460.0
+24,887,56,Almacén,Almacén en New Castle de Contoso,Activado,2004-02-15,,658,New Castle CityCenter                 ,,25.0,700.0
+25,839,57,Almacén,Almacén nº 1 en Greeley de Contoso,Activado,2004-03-16,,659," W 29th Street, Greeley CityCenter  ",,25.0,700.0
+26,867,58,Almacén,Almacén en Loveland de Contoso,Activado,2004-04-17,,660,Loveland Downtown          ,,26.0,680.0
+27,859,59,Almacén,Almacén en Lafayette de Contoso,Activado,2004-05-18,,661,Lafayette Downtown               ,,19.0,455.0
+28,809,60,Almacén,Almacén en Castle Rock de Contoso,Activado,2004-06-19,,662,Castle Rock Downtown              ,,33.0,560.0
+29,927,61,Almacén,Almacén en Sedalia de Contoso,Desactivado,2004-07-20,2009-07-12,663,N Plum Ave St              ,Relocation,47.0,1125.0
+30,829,62,Almacén,Contoso Fort Collins almacén,Activado,2004-08-21,,664,Old Town West ST              ,,22.0,500.0
+31,839,57,Almacén,Almacén nº 2 en Greeley de Contoso,Activado,2004-09-22,,665,Greeley  Downtown Shopping mall           ,,17.0,462.0
+32,877,63,Almacén,Almacén en Milliken de Contoso,Activado,2004-10-23,,666,Milliken Downtown                 ,,25.0,700.0
+33,799,64,Almacén,Almacén en Berthoud de Contoso,Activado,2004-11-24,,667,"Berthoud, CO St          ",,26.0,680.0
+34,818,65,Almacén,Almacén nº 1 en Denver de Contoso,Activado,2004-12-02,,668,Coors Field 17th St           ,,26.0,680.0
+35,818,65,Almacén,Almacén nº 2 en Denver de Contoso,Activado,2004-10-03,,669,West Highland Borden Ave    ,,19.0,455.0
+36,818,65,Almacén,Almacén nº 3 en Denver de Contoso,Activado,2003-06-27,,670,Wellshire St    ,,33.0,560.0
+37,803,66,Almacén,Almacén en Boulder de Contoso,Activado,2003-03-28,,671,Transit Village Broadway      ,,47.0,1125.0
+38,940,67,Almacén,Almacén en Thornton de Contoso,Activado,2003-04-29,,672,"Shopping mall, Citycenter",,22.0,500.0
+39,865,68,Almacén,Almacén en Littleton de Contoso,Activado,2003-05-30,,673,"Littleton, Citycenter ",,17.0,462.0
+40,790,69,Almacén,Almacén en Aurora de Contoso,Activado,2003-06-11,,674,Willow Park Ave     ,,25.0,700.0
+41,904,70,Almacén,Almacén en Parker de Contoso,Activado,2004-07-02,,675,"Parker, CO  Shopping mall",,26.0,680.0
+42,840,71,Almacén,Almacén en Green Bay de Contoso,Activado,2003-08-03,,676,Green Bay Downtown        ,,19.0,455.0
+43,786,72,Almacén,Almacén en Appleton de Contoso,Activado,2003-09-04,,677,"Appleton, WI Newark St       ",,33.0,560.0
+44,874,73,Almacén,Almacén en Menasha de Contoso,Activado,2003-10-05,,678,"Menasha, WI Shopping mall         ",,47.0,1125.0
+45,901,74,Almacén,Almacén en Oshkosh de Contoso,Activado,2007-11-06,,679,"Oshkosh, WI Broadway        ",,22.0,500.0
+46,827,136,Almacén,Almacén en Fond du lac de Contoso,Activado,2007-12-07,,680,Fond du Lac Shopping mall    ,,17.0,460.0
+47,878,75,Almacén,Almacén nº 1 en Milwaukee de Contoso,Activado,2004-01-18,,681,Havenwoods St         ,,25.0,700.0
+48,878,75,Almacén,Almacén nº 2 en Milwaukee de Contoso,Desactivado,2004-02-09,2009-05-12,682,Riverwest St         ,Relocation,25.0,700.0
+49,878,75,Almacén,Almacén nº 3 en Milwaukee de Contoso,Activado,2004-04-02,,683,Lincoln Village St          ,,26.0,680.0
+50,949,76,Almacén,Almacén nº 1 en Waukesha de Contoso,Activado,2004-04-19,,684,"Waukesha,  Water St           ",,19.0,455.0
+51,918,87,Almacén,Almacén nº 1 en Racine de Contoso,Activado,2004-05-15,,685,Racine shopping mall,,33.0,560.0
+52,806,137,Almacén,Almacén en Burlington de Contoso,Activado,2004-06-17,,686,"Burlington, WI St shopping mall ",,47.0,1125.0
+53,821,138,Almacén,Almacén en East Troy de Contoso,Activado,2004-08-18,,687,"East Troy, DW St Shopping mall        ",,22.0,500.0
+54,949,76,Almacén,Almacén nº 2 en Waukesha de Contoso,Activado,2004-08-20,,688,"Waukesha, WI 8th Ave         ",,17.0,462.0
+55,835,77,Almacén,Almacén en Germantown de Contoso,Activado,2004-09-02,,689,"Germantown, DEI St Shopping mall     ",,25.0,700.0
+57,913,79,Almacén,Almacén en Port Washington de Contoso,Activado,2004-11-25,,691,"Port Washington, WIMI St Shopping mall          ",,26.0,680.0
+58,928,80,Almacén,Almacén en Sheboygan de Contoso,Activado,2004-12-26,,692,"Sheboygan, WIAmsterdam Ave     ",,19.0,455.0
+59,871,81,Almacén,Almacén en Manitowoc de Contoso,Activado,2004-04-27,,693,"Manitowoc, DAWI St Shopping mall           ",,33.0,560.0
+60,870,82,Almacén,Almacén en Madison de Contoso,Activado,2004-02-28,,694,Dudgeon-Monroe Shopping mall   ,,47.0,1125.0
+61,898,83,Almacén,Almacén en Oregón de Contoso,Activado,2004-03-29,,695,"Oregon, EQI St  Shopping mall   ",,22.0,500.0
+62,934,84,Almacén,Almacén en Stoughton de Contoso,Desactivado,2004-04-30,2009-07-12,696,"Stoughton, Citycenter",Relocation,17.0,462.0
+63,822,85,Almacén,Almacén en Edgerton de Contoso,Activado,2004-05-31,,697,"Edgerton, WI Broadway      ",,25.0,700.0
+64,828,86,Almacén,Almacén en Fort Atkinson de Contoso,Activado,2004-06-01,,698,Fort Atkinson Citycenter,,26.0,680.0
+65,918,87,Almacén,Almacén nº 2 en Racine de Contoso,Activado,2009-07-02,,699,"Racine, Big Shopping mall   ",,19.0,455.0
+66,849,88,Almacén,Almacén nº 1 en Houston de Contoso,Activado,2004-08-03,,700,Texas Houston Freeman St             ,,33.0,560.0
+67,849,88,Almacén,Almacén nº 2 en Houston de Contoso,Activado,2004-03-11,,701,Texas Houston Ryon St                ,,47.0,1125.0
+68,849,88,Almacén,Almacén nº 3 en Houston de Contoso,Activado,2004-07-02,,702,Texas Houston Brewster St       ,,22.0,500.0
+69,849,88,Almacén,Almacén nº 4 en Houston de Contoso,Activado,2004-08-03,,703,Texas Houston Sakowitz St            ,,17.0,460.0
+70,876,89,Almacén,Almacén en Midland de Contoso,Activado,2003-09-12,,704,West Way St      ,,25.0,700.0
+71,924,90,Almacén,Almacén en Russellville de Contoso,Activado,2007-11-05,,705,"Russellville, AR St             ",,25.0,700.0
+72,879,91,Almacén,Almacén en Minden de Contoso,Activado,2004-11-06,,706,"Minden, LA  Downtown                    ",,26.0,680.0
+73,929,92,Almacén,Almacén en Shreveport de Contoso,Activado,2004-10-17,,707,Texas Houston 1300 Baker St               ,,19.0,455.0
+74,872,93,Almacén,Almacén en Marshall de Contoso,Activado,2004-02-18,,708,"Marshall, TX Shopping mall         ",,33.0,560.0
+75,866,94,Almacén,Almacén en Longview de Contoso,Activado,2004-02-19,,709,"Longview, SDallas St  Shopping mall              ",,47.0,1125.0
+76,798,95,Almacén,Almacén nº 1 en Beaumont de Contoso,Activado,2004-02-20,,710,"Beaumont, Tt Shopping mall                 ",,22.0,500.0
+77,897,96,Almacén,Almacén en Orange de Contoso,Activado,2004-02-21,,711,Orange Citycenter Shopping mall         ,,17.0,462.0
+78,798,95,Almacén,Almacén nº 2 en Beaumont de Contoso,Activado,2004-02-22,,712,"Beaumont, TX Downtown     ",,25.0,700.0
+79,579,97,Almacén,Almacén en Baytown de Contoso,Activado,2004-01-17,,713,"Baytown, TX St Shopping mall            ",,26.0,680.0
+80,858,98,Almacén,Almacén en La Porte de Contoso,Activado,2004-02-18,,714,"La Porte, TXS Shopping mall             ",,26.0,680.0
+81,793,99,Almacén,Almacén en Bacliff de Contoso,Activado,2004-03-19,,715,Bacliff Downtown Shopping mall         ,,19.0,455.0
+82,939,100,Almacén,Almacén en Texas City de Contoso,Activado,2004-04-20,,716,"Texas City, TX St Shopping mall               ",,33.0,560.0
+83,906,101,Almacén,Almacén en Pasadena de Contoso,Activado,2004-05-21,,717,"Pasadena, TX St Shopping mall        ",,47.0,1125.0
+84,851,102,Almacén,Almacén en Humble de Contoso,Desactivado,2004-06-22,2009-02-12,718,"Humble, TXd Shopping mall        ",Relocation,22.0,500.0
+85,933,103,Almacén,Almacén en Spring de Contoso,Activado,2004-07-23,,719,Arthur Bayer Park St    ,,17.0,462.0
+86,791,104,Almacén,Almacén en Austin de Contoso,Activado,2004-08-24,,720,Central East Austin St          ,,25.0,700.0
+87,925,105,Almacén,Almacén en San Antonio de Contoso,Activado,2004-08-25,,721,City North Region Downtown                 ,,26.0,680.0
+88,453,106,Almacén,Almacén en Cedar Park de Contoso,Activado,2004-10-26,,722,"Cedar Park, TX St             ",,19.0,455.0
+89,923,107,Almacén,Almacén en Round Rock de Contoso,Activado,2004-11-27,,723,Egger Acres St               ,,33.0,560.0
+90,815,108,Almacén,Almacén en Dallas de Contoso,Activado,2008-12-02,,724,Dallas Citycenter Shopping mall      ,,47.0,1125.0
+91,834,109,Almacén,Almacén en Georgetown de Contoso,Activado,2003-01-29,,725,Georgetown St         ,,22.0,500.0
+92,845,110,Almacén,Almacén en Hillsboro de Contoso,Activado,2003-01-30,,726,"Hillsboro, TX Ward                ",,17.0,460.0
+93,787,111,Almacén,Almacén en Arlington de Contoso,Activado,2003-08-31,,727,Central Oaks Shopping mall        ,,25.0,700.0
+94,837,112,Almacén,Almacén en Grand Prairie de Contoso,Activado,2003-02-03,,728,"Grand Prairie, TX  Downtown                   ",,25.0,700.0
+95,819,113,Almacén,Almacén en Desoto de Contoso,Activado,2003-03-31,,729,"Desoto, TX Shopping mall       ",,26.0,680.0
+96,919,114,Almacén,Almacén en Richardson de Contoso,Activado,2003-02-01,,730,Richardson Downtown Shopping mall           ,,19.0,455.0
+97,863,115,Almacén,Almacén en Lewisville de Contoso,Activado,2003-04-02,,731,"Lewisville, Edeg ST Shopping mall    ",,33.0,560.0
+98,817,116,Almacén,Almacén en Denton de Contoso,Activado,2003-05-03,,732,Denton Citycenter Shopping mall    ,,47.0,1125.0
+99,831,117,Almacén,Almacén en Fort Worth de Contoso,Activado,2003-06-04,,733,Amon Carter Museum St          ,,22.0,500.0
+100,910,118,Almacén,Almacén en Plano de Contoso,Activado,2003-07-05,,734,City North St         ,,17.0,462.0
+101,875,119,Almacén,Almacén nº 1 en Miami de Contoso,Activado,2003-08-06,,735,FLW Flagler St,,17.0,462.0
+102,875,119,Almacén,Almacén nº 2 en Miami de Contoso,Activado,2003-09-07,,736,NW 8th St,,25.0,700.0
+103,853,120,Almacén,Almacén en Jacksonville de Contoso,Activado,2003-10-08,,737,Lackawanna Park St,,26.0,680.0
+104,937,121,Almacén,Almacén nº 1 en Tallahassee de Contoso,Activado,2003-11-09,,738,Woodland Drives St,,19.0,455.0
+105,937,121,Almacén,Almacén nº 2 en Tallahassee de Contoso,Activado,2003-11-29,,739,Thomasville Rd,,33.0,560.0
+107,926,123,Almacén,Almacén en Sebring de Contoso,Activado,2003-02-12,,741,601-669 N Ping St ,,22.0,500.0
+108,860,124,Almacén,Almacén en Lakeland de Contoso,Activado,2003-02-13,,742,N Missouri Ave,,17.0,460.0
+109,830,125,Almacén,Almacén en Fort Lauderdale de Contoso,Activado,2003-02-14,,743,G Harold Martin Downtown        ,,25.0,700.0
+110,899,126,Almacén,Almacén en Orlando de Contoso,Activado,2003-02-15,,744,1400-1598 FL-50 St,,25.0,700.0
+111,938,127,Almacén,Almacén en Tampa de Contoso,Activado,2003-02-16,,745,E Columbus Downtown        ,,26.0,680.0
+112,857,128,Almacén,Almacén en Key West de Contoso,Desactivado,2004-01-12,2009-07-02,746,N Roosevelt Blvd St,Relocation,19.0,455.0
+113,807,129,Almacén,Almacén en Cabo Cañaveral de Contoso,Activado,2004-02-14,,747,Astronaut Blvd St,,33.0,560.0
+114,782,130,Almacén,Almacén en Albania de Contoso,Activado,2004-02-12,,748,N Pine St ,,47.0,1125.0
+115,890,131,Almacén,Almacén nº 1 en Nueva York de Contoso,Activado,2004-03-01,,749,W 40th St ,,22.0,500.0
+116,922,132,Almacén,Almacén nº 1 en Rochester de Contoso,Activado,2004-04-02,,750,Madison St,,17.0,462.0
+117,890,131,Almacén,Almacén nº 2 en Nueva York de Contoso,Activado,2005-05-15,,751,Kips Bay St,,25.0,700.0
+118,936,133,Almacén,Almacén en Siracusa de Contoso,Activado,2004-06-16,,752,520 Pearl St ,,26.0,680.0
+119,805,134,Almacén,Almacén en Buffalo de Contoso,Desactivado,2004-07-02,2008-09-22,753,Buffalo Citycenter,Store,19.0,455.0
+120,911,139,Almacén,Almacén en Plattsburgh de Contoso,Activado,2004-08-18,,754,Brinkerhoff St ,,33.0,560.0
+121,804,140,Almacén,Almacén en Brooklyn de Contoso,Activado,2004-09-19,,755,Flatbush Ave St ,,47.0,1125.0
+122,902,141,Almacén,Almacén en Oswego de Contoso,Activado,2004-10-20,,756,East River St,,22.0,500.0
+123,852,142,Almacén,Almacén en Ithaca de Contoso,Activado,2004-11-21,,757,Cascadilla Ave St,,17.0,460.0
+124,922,132,Almacén,Almacén nº 2 en Rochester de Contoso,Activado,2004-12-22,,758,Canal St,,25.0,700.0
+125,916,143,Almacén,Almacén en Queens de Contoso,Activado,2006-01-23,,759,St Johns Downtown,,25.0,700.0
+126,823,144,Almacén,Almacén en Elmira de Contoso,Activado,2004-02-24,,760,Columbia St,,26.0,680.0
+127,912,145,Almacén,Almacén en Poestenkill de Contoso,Activado,2004-01-25,,761,Rensselaer County St,,19.0,455.0
+128,943,146,Almacén,Almacén nº 1 en Trenton de Contoso,Activado,2004-03-26,,762,241 E State St,,33.0,560.0
+129,943,146,Almacén,Almacén nº 2 en Trenton de Contoso,Desactivado,2004-07-27,2008-12-12,763,202 S Feeder St ,Relocation,47.0,1125.0
+130,891,147,Almacén,Almacén nº 1 en Newark de Contoso,Activado,2004-08-28,,764,Halsey St,,22.0,500.0
+131,891,147,Almacén,Almacén nº 2 en Newark de Contoso,Activado,2004-09-29,,765,Edison PI St,,17.0,462.0
+132,854,148,Almacén,Almacén en Jersey City de Contoso,Activado,2004-11-02,,766,76 Boyd Ave St,,25.0,700.0
+133,908,149,Almacén,Almacén en Paterson de Contoso,Activado,2008-12-03,,767,Federal Plaza St,,26.0,680.0
+134,814,150,Almacén,Almacén en Clifton de Contoso,Activado,2004-01-24,,768,Kowal Downtown,,26.0,680.0
+135,820,151,Almacén,Almacén en East Orange de Contoso,Activado,2004-02-15,,769,N Arlington Ave,,19.0,455.0
+136,907,152,Almacén,Almacén en Passaic de Contoso,Activado,2004-03-16,,770,190 Paulison Ave,,33.0,560.0
+137,797,153,Almacén,Almacén en Bayonne de Contoso,Activado,2004-04-17,,771,E 31st St ,,47.0,1125.0
+138,945,154,Almacén,Almacén en Vineland de Contoso,Activado,2004-05-18,,772,W Cherry St ,,22.0,500.0
+139,886,155,Almacén,Almacén en New Brunswick de Contoso,Activado,2004-06-19,,773,Suydam St ,,17.0,462.0
+140,842,156,Almacén,Almacén en Hackensack de Contoso,Activado,2004-07-20,,774,237 State St,,25.0,700.0
+141,788,157,Almacén,Almacén en Atlantic City de Contoso,Activado,2004-08-21,,775,Pacific Ave ,,26.0,680.0
+142,880,158,Almacén,Almacén en Montclair de Contoso,Activado,2004-09-22,,776,Valley St ,,19.0,455.0
+143,847,159,Almacén,Almacén en Hobok de Contoso,Activado,2004-10-23,,777,322 8th St,,33.0,560.0
+144,882,160,Almacén,Almacén en Morristown de Contoso,Activado,2004-11-24,,778,Washington St,,47.0,1125.0
+145,808,161,Almacén,Almacén en Cape May de Contoso,Activado,2004-12-02,,779,Delaware Ave St ,,22.0,500.0
+146,802,162,Almacén,Almacén en Boston de Contoso,Activado,2004-11-06,,780,Channel Center St ,,17.0,460.0
+147,952,163,Almacén,Almacén nº 1 en Worcester de Contoso,Activado,2004-10-17,,781,99 Central St ,,25.0,700.0
+148,952,163,Almacén,Almacén nº 2 en Worcester de Contoso,Desactivado,2004-02-18,2009-07-12,782,Humboldt Ave,Relocation,25.0,700.0
+149,885,164,Almacén,Almacén en Bedford de Contoso,Activado,2004-02-19,,783,Palmer CityCenter,,26.0,680.0
+150,789,165,Almacén,Almacén en Attleboro de Contoso,Activado,2004-02-20,,784,Thacher Downtown,,19.0,455.0
+151,868,166,Almacén,Almacén en Lowell de Contoso,Activado,2004-02-21,,785,Gorham Citycenter,,33.0,560.0
+152,861,167,Almacén,Almacén en Leominster de Contoso,Activado,2004-02-22,,786,101 Union St Shopping mall    ,,47.0,1125.0
+153,846,168,Almacén,Almacén en Hingham de Contoso,Activado,2004-01-17,,787,Crowes Ln St ,,22.0,500.0
+154,917,169,Almacén,Almacén en Quincy de Contoso,Activado,2004-02-18,,788,Thomas E Burgin St ,,17.0,462.0
+155,832,170,Almacén,Almacén en Framingham de Contoso,Activado,2004-03-19,,789,29 Woodlan St,,25.0,700.0
+156,449,171,Almacén,Almacén en Cambridge de Contoso,Activado,2004-04-20,,790,8 Story St  Shopping mall    ,,26.0,680.0
+157,931,172,Almacén,Almacén en Somerville de Contoso,Activado,2004-05-21,,791,Pembroke St,,26.0,680.0
+158,844,173,Almacén,Almacén en Haverhill de Contoso,Activado,2004-06-22,,792,Hilldale Ave St ,,19.0,455.0
+159,869,174,Almacén,Almacén en Lynn de Contoso,Activado,2004-07-23,,793,Congress Rd,,33.0,560.0
+160,895,175,Almacén,Almacén en Northampton de Contoso,Activado,2004-08-24,,794,Florence Rd Shopping mall    ,,47.0,1125.0
+161,848,176,Almacén,Almacén en Holyoke de Contoso,Activado,2004-08-25,,795,Old Jarvis Ave ,,22.0,500.0
+162,909,177,Almacén,Almacén en Pittsfield de Contoso,Desactivado,2004-10-26,2009-07-12,796,Columbus Ave,Relocation,17.0,462.0
+163,826,178,Almacén,Almacén en Falmouth de Contoso,Activado,2004-11-27,,797,Shore Citycenter Shopping mall    ,,25.0,700.0
+164,914,179,Almacén,Almacén en Provincetown de Contoso,Activado,2004-12-02,,798,Alden St,,26.0,680.0
+165,883,180,Almacén,Almacén en Nantucket de Contoso,Activado,2004-11-06,,799,8 Washington St,,19.0,455.0
+166,795,181,Almacén,Almacén en Bangor de Contoso,Activado,2004-10-17,,800,Woodland Dr St Shopping mall    ,,33.0,560.0
+167,796,182,Almacén,Almacén en Bar Harbor de Contoso,Activado,2004-02-18,,801,Ledgelawn Ave,,47.0,1125.0
+168,855,183,Almacén,Almacén en Kennebunkport de Contoso,Activado,2004-02-19,,802,School St ,,22.0,500.0
+169,862,184,Almacén,Almacén en Lewiston de Contoso,Activado,2004-02-20,,803,50 Kevin St,,17.0,460.0
+170,900,185,Almacén,Almacén en Orono de Contoso,Activado,2004-02-21,,804,Pleasant St ,,25.0,700.0
+171,932,186,Almacén,Almacén en South Portland de Contoso,Activado,2004-02-22,,805,Robert Mills St ,,25.0,700.0
+172,843,187,Almacén,Almacén en Hartford de Contoso,Activado,2004-01-17,,806,Asylum St Shopping mall    ,,26.0,680.0
+173,801,188,Almacén,Contoso Bridgeport almacén,Activado,2004-02-18,,807,Center St,,19.0,455.0
+174,948,189,Almacén,Almacén en Waterbury de Contoso,Activado,2004-03-19,,808,192 Bank St Shopping mall    ,,33.0,560.0
+175,896,190,Almacén,Almacén en Old Saybrook de Contoso,Activado,2004-04-20,,809,18 W King Rd,,47.0,1125.0
+176,816,191,Almacén,Almacén en Darien de Contoso,Activado,2004-05-21,,810,Lakeside Ave Shopping mall    ,,22.0,500.0
+177,888,192,Almacén,Almacén en New Haven de Contoso,Activado,2004-06-22,,811,Lynwood PI Downtown,,17.0,462.0
+178,864,193,Almacén,Almacén en el condado de Litchfield de Contoso,Activado,2004-07-23,,812,"CTuDED Rd, Litchfield County",,25.0,700.0
+179,889,194,Almacén,Almacén en New London de Contoso,Activado,2004-08-24,,813,Jefferson Ave,,26.0,680.0
+180,892,195,Almacén,Almacén en Norfolk de Contoso,Activado,2004-08-25,,814,Wide St Shopping mall,,26.0,680.0
+181,946,196,Almacén,Almacén en Virginia Beach de Contoso,Activado,2004-10-26,,815,Atlantic Shopping mall,,19.0,455.0
+182,951,197,Almacén,Almacén en Winchester de Contoso,Activado,2004-11-27,,816,Handley St Shopping mall,,33.0,560.0
+183,784,111,Almacén,Almacén en Anchorage de Contoso,Activado,2004-12-02,,817,"4800 Spenard Road,Shopping mall",,47.0,1125.0
+184,783,198,Almacén,Almacén en Alejandría de Contoso,Desactivado,2004-11-06,2009-07-12,818,Kingsgate St Shopping mall,Relocation,22.0,500.0
+185,921,199,Almacén,Almacén en Roanoke de Contoso,Activado,2004-10-17,,819,Salem Ave SE StShopping mall,,17.0,462.0
+186,811,200,Almacén,Almacén en Charlottesville de Contoso,Activado,2004-02-18,,820,Grady Ave StShopping mall,,25.0,700.0
+187,833,201,Almacén,Almacén en Fredericksburg de Contoso,Activado,2004-02-19,,821,Beverly St Shopping mall,,26.0,680.0
+188,873,202,Almacén,Almacén en Martinsville de Contoso,Activado,2004-02-20,,822,Monroe St,,19.0,455.0
+189,841,203,Almacén,Almacén en Greenville de Contoso,Activado,2004-02-21,,823,Lavinia St Shopping mall,,33.0,560.0
+190,810,204,Almacén,Almacén en Charleston de Contoso,Activado,2004-02-22,,824,Rockingham St Shopping mall,,47.0,1125.0
+191,785,205,Almacén,Almacén en Annapolis de Contoso,Activado,2004-01-17,,825,Cherry Grove Ave Shopping mall,,22.0,500.0
+192,794,206,Almacén,Almacén en Baltimore de Contoso,Activado,2004-02-18,,826,Pleasant St,,17.0,460.0
+193,850,207,Almacén,Almacén en Howard de Contoso,Activado,2004-03-19,,827,River Valley Chase St Shopping mall,,25.0,700.0
+194,920,208,Almacén,Almacén en Ridgely de Contoso,Activado,2004-04-20,,828,Deerfield St ,,25.0,700.0
+195,915,209,Almacén,Almacén en Queen Anne's County de Contoso,Activado,2004-05-21,,829,Tilghman Neck St Shopping mall,,26.0,680.0
+196,905,210,Almacén,Almacén en Parkville de Contoso,Activado,2004-06-22,,830,Parkville St Shopping mall,,19.0,455.0
+197,792,211,Almacén,Almacén en Back River de Contoso,Activado,2004-07-23,,831,Back River St Shopping mall,,33.0,560.0
+198,835,77,Almacén,Almacén en North Harford de Contoso,Activado,2004-08-24,,832,Wisteria St Shopping mall,,47.0,1125.0
+199,800,212,En línea,Tienda en línea en Norteamérica de Contoso,Activado,2004-08-25,,59,Marbury St Shopping mall,,325.0,500.0
+200,894,213,Catálogo,Almacén de catálogo de Contoso,Activado,2004-10-26,,58,North Harford St Shopping mall,,120.0,462.0
+201,506,219,Almacén,Almacén en Londres de Contoso,Activado,2004-11-27,,833,"London, W1C 1HG, United Kingdom",,17.0,462.0
+202,748,220,Almacén,Almacén en Edimburgo de Contoso,Activado,2004-08-02,,834,"Princes St Edinburgh, Midlothian Shopping mall, United Kingdom",,25.0,700.0
+203,751,221,Almacén,Almacén en Glasgow de Contoso,Activado,2007-08-16,,835,"Renfrew St Glasgow, Lanarkshire, Citycenter, United Kingdom",,26.0,680.0
+204,576,222,Almacén,Almacén en York de Contoso,Activado,2004-08-27,,836,"Spurriergate York, North Yorkshire Citycenter, United Kingdom",,78.0,680.0
+205,742,223,Almacén,Almacén en Carlisle de Contoso,Activado,2004-05-18,,837,"Citycenter  Botchergate Carlisle, UK",,23.0,680.0
+206,761,224,Almacén,Almacén en Manchester de Contoso,Activado,2004-06-19,,838," Windsor Ave Failsworth, Manchester Citycenter, United Kingdom",,11.0,680.0
+207,755,225,Almacén,Almacén en Lancashire de Contoso,Activado,2004-07-20,,839,"Rochdale Rd Todmorden, Lancashire Shopping mall, United Kingdom",,36.0,680.0
+208,781,226,Almacén,Almacén en West Yorkshire de Contoso,Activado,2004-03-21,,840,"22 Market Sq Shipley, West Yorkshire, BD18 3QJ, United Kingdom",,90.0,680.0
+209,738,227,Almacén,Almacén en Baildon de Contoso,Activado,2004-09-22,,841,"West Ln, Baildon, Shipley Citycenter, United",,32.0,680.0
+210,743,228,Almacén,Almacén en Cheshire de Contoso,Activado,2004-04-23,,842,"Market St  Marple, Stockport, Cheshire Citycenter, United Kingdom",,,680.0
+211,774,229,Almacén,Almacén en Stockport de Contoso,Activado,2004-11-24,,843,"Buxton Rd High Lane, Stockport Citycenter, United Kingdom",,34.0,680.0
+212,651,230,Almacén,Almacén en Liverpool de Contoso,Activado,2004-03-02,,844,"Leinster Rd Liverpool, Merseyside Citycenter, UK  ",,64.0,680.0
+213,753,231,Almacén,Almacén en Knotty Ash de Contoso,Activado,2004-03-26,,845,"East Prescot Road Knotty Ash, Citycenter, United Kingdom",,24.0,680.0
+214,501,232,Almacén,Almacén en Leeds de Contoso,Activado,2004-06-27,,846,"Leeds Citycenter, United Kingdom",,25.0,680.0
+215,529,233,Almacén,Almacén en París de Contoso,Activado,2004-03-28,,847,"Rue de Rivoli Citycenter  Paris, France",,12.0,680.0
+216,762,234,Almacén,Almacén en Marsella de Contoso,Activado,2008-04-29,,854,"Citycenter Marseille, France",,13.0,680.0
+217,759,235,Almacén,Almacén en Lyon de Contoso,Activado,2004-08-30,,855,"Citycenter Lyon, France",,15.0,680.0
+218,777,236,Almacén,Almacén en Toulouse de Contoso,Activado,2004-09-11,,856,"Citycenter  toulouse, France",,23.0,680.0
+219,767,237,Almacén,Almacén en Niza de Contoso,Activado,2004-02-02,,857,"Citycenter Reims, France",,32.0,680.0
+220,766,238,Almacén,Almacén en Nantes de Contoso,Activado,2004-08-03,,858,"Citycenter Nantes, France",,11.0,680.0
+221,775,239,Almacén,Almacén en Estrasburgo de Contoso,Activado,2004-09-04,,859,"Downtown Strasbourg, France",,10.0,630.0
+222,771,240,Almacén,Almacén en Roma de Contoso,Activado,2007-10-05,,860,,,43.0,490.0
+223,779,241,Almacén,Almacén en Venecia de Contoso,Activado,2009-07-06,,861,,,11.0,500.0
+224,749,242,Almacén,Almacén en Florencia de Contoso,Activado,2004-12-07,,862,,,45.0,500.0
+225,776,243,Almacén,Almacén en Turín de Contoso,Activado,2004-03-18,,863,,,24.0,500.0
+226,763,244,Almacén,Almacén en Milán de Contoso,Activado,2004-04-09,,864,,,23.0,500.0
+227,884,245,Almacén,Almacén en Nápoles de Contoso,Activado,2004-03-02,,865,"Downtown Naples, Florida",,13.0,500.0
+228,586,246,Almacén,Almacén en Berlín de Contoso,Activado,2008-10-09,,866,"Downtown Berlin, Germany",,13.0,500.0
+230,754,247,Almacén,Contoso koln No.2 almacén,Activado,2004-05-15,,868,"Downtown, Koln, Germany",,25.0,500.0
+231,752,248,Almacén,Almacén en Hofheim de Contoso,Activado,2004-06-17,,869,"Citycenter Hofheim am Taunus, Germany",,25.0,500.0
+232,754,249,Almacén,Almacén de Contoso koln n.º 1,Activado,2004-07-29,,870,"Citycenter Koln, Germany",,35.0,500.0
+233,756,250,Almacén,Almacén en Landstuhl de Contoso,Activado,2004-08-20,,871,"Citycenter Wallhalben, Germany",,21.0,500.0
+234,747,251,Almacén,Almacén en Dusseldorf de Contoso,Activado,2007-09-12,,872,"Citycenter, Düsseldorf, Germany",,24.0,500.0
+235,770,252,Almacén,Almacén en Ramstein de Contoso,Activado,2004-08-13,,873,"Citycenter Shopping mall Ramstein-Miesenbach, Germany",,15.0,500.0
+236,739,253,Almacén,Almacén en Baumholder de Contoso,Activado,2004-06-25,,874,"Shopping Mall Baumholder, Germany",,28.0,500.0
+237,750,254,Almacén,Almacén en Giebelstadt de Contoso,Activado,2004-12-26,,875,"Citycenter, Giebelstadt, Germany",,15.0,500.0
+238,769,255,Almacén,Almacén en Obamberg de Contoso,Activado,2004-05-27,,876,"Citycenter Bamberg, Germany",,29.0,500.0
+239,765,256,Almacén,Almacén en Munich de Contoso,Activado,2006-02-28,,877,"Citycenter München, Germany",,18.0,500.0
+240,736,257,Almacén,Almacén en Ámsterdam de Contoso,Activado,2004-03-29,,878,"Citycenter Shopping mall, Amsterdam (Noord-Holland), Netherlands",,26.0,680.0
+241,745,258,Almacén,Almacén en Copenhague de Contoso,Activado,2004-04-30,,879,"Ny Carlsbergvej 14 St, Denmark",,25.0,680.0
+242,773,259,Almacén,Almacén en Estocolmo de Contoso,Activado,2004-05-31,,880,"Birger Jarlsg Shopping mall, Sweden",,33.0,680.0
+243,760,260,Almacén,Almacén en Madrid de Contoso,Activado,2004-03-01,,881,"Alcobendas Shopping mall MADRID, Spain",,35.0,680.0
+244,758,261,Almacén,Almacén en Liubliana de Contoso,Activado,2004-07-02,,882,"Citycenter Ljubljana, Slovenia",,36.0,680.0
+245,741,262,Almacén,Almacén en Bucarest de Contoso,Activado,2004-05-19,,883,"Nan Street Bucharest, Romania",,25.0,680.0
+246,740,263,Almacén,Almacén en Berne de Contoso,Activado,2004-04-20,,884,,,53.0,680.0
+247,780,264,Almacén,Almacén en Varsovia de Contoso,Activado,2004-09-04,,885,"Citycenter Warszawa, Poland",,15.0,680.0
+248,778,265,Almacén,Almacén en Valletta de Contoso,Activado,2004-02-19,,886,"Citycenter, Fgura, Malta",,42.0,680.0
+249,746,266,Almacén,Almacén en Dublín de Contoso,Activado,2006-02-20,,887,"Pconnell Street Upper Dublin, DUBLIN 1, Ireland",,55.0,680.0
+250,737,267,Almacén,Almacén en Atenas de Contoso,Activado,2004-04-17,,888,,,15.0,680.0
+251,728,268,Almacén,Almacén en Singapur de Contoso,Activado,2004-04-22,,848,"Havelock Road Shopping mall, Singapore",,27.0,480.0
+252,713,296,Almacén,Almacén en Canberra de Contoso,Activado,2005-11-17,,889,"Canberra International shopping mall, Australia",,28.0,480.0
+253,558,294,Almacén,Almacén nº 1 en Sidney de Contoso,Activado,2005-06-27,,890,"Sydney Citycenter, Australia",,20.0,480.0
+254,734,295,Almacén,Almacén en Ereván de Contoso,Activado,2004-03-28,,891,"Amiryan Street Yerevan,  Armenia",,15.0,480.0
+255,723,269,Almacén,Almacén en Nueva Delhi de Contoso,Activado,2004-04-29,,892,"Khan Market, New Delhi,  India",,29.0,480.0
+256,721,270,Almacén,Almacén en Bombay de Contoso,Activado,2004-07-30,,893,"Mumbai Citycenter, Maharashtra, India",,35.0,480.0
+257,718,271,Almacén,Almacén en Calcuta de Contoso,Activado,2005-06-11,,894,"Citycenter, Kolkata, West Bengal, India‎ ",,35.0,480.0
+258,731,272,Almacén,Almacén nº 1 en Thimphu de Contoso,Activado,2009-07-02,,895,"Citycenter, Thimphu, Bhutan",,35.0,480.0
+259,716,273,Almacén,Almacén nº 1 en Hong Kong de Contoso,Activado,2004-08-03,,896,"Hong Kong,  New Town Plaza‎ ",,35.0,480.0
+260,730,274,Almacén,Almacén nº 1 en Teherán de Contoso,Activado,2004-09-04,,897,"Citycenter, Tehran, Tehran, Iran",,35.0,480.0
+261,714,275,Almacén,Almacén nº 1 en Damasco de Contoso,Activado,2007-10-05,,898,"Nissan Street, Mezze Damascus, Syria",,35.0,480.0
+262,709,276,Almacén,Almacén nº 1 en Bangkok de Contoso,Activado,2008-11-06,,899,"Bangkok,Citycenter, Thailand",,62.0,480.0
+263,764,277,Almacén,Almacén nº 1 en Moscú de Contoso,Activado,2004-06-07,,900,"Citycenter, Russia",,65.0,480.0
+264,708,278,Almacén,Almacén nº 1 en Asjabad de Contoso,Activado,2004-01-18,,901,"Gorogly Street, Turkmenistan",,68.0,480.0
+265,717,279,Almacén,Almacén nº 1 en Islamabad de Contoso,Activado,2004-02-09,,902," Islamabad Capital Territory, Pakistan",,71.0,480.0
+267,732,281,Almacén,Almacén nº 1 en Tokio de Contoso,Activado,2004-04-02,,904,"Shinjuku, Tokyo Citycenter",,68.0,480.0
+268,732,281,Almacén,Almacén nº 2 en Tokio de Contoso,Activado,2006-04-19,,905,"Citycenter, Shinjuku-kuTokyo, Japan‎",,68.0,480.0
+269,735,282,Almacén,Almacén en Yokohama de Contoso,Activado,2004-05-15,,906,"Citycenter, Kanagawa Prefecture Japan",,77.0,480.0
+270,724,283,Almacén,Almacén nº 1 en Osaka de Contoso,Activado,2005-06-17,,907,"Downtown,Osaka, Japan",,80.0,480.0
+271,722,284,Almacén,Almacén en Nagoya de Contoso,Activado,2008-08-18,,908,"North district  Nagoya,Japan ",,50.0,480.0
+272,725,285,Almacén,Almacén en Sapporo de Contoso,Activado,2007-08-20,,909,sapporo Hokkaido northwest district,,50.0,480.0
+273,719,286,Almacén,Almacén en Kyoto de Contoso,Activado,2009-09-02,,910,Kyoto centre district,,50.0,480.0
+274,726,287,Almacén,Almacén en Seúl de Contoso,Activado,2008-10-13,,911,Seoul west district ,,50.0,480.0
+275,712,288,Almacén,Almacén en Busan de Contoso,Activado,2006-07-12,,912,"Korea Citycenter Namchendong, Suyeong-Gu, Busan",,50.0,480.0
+276,711,289,Almacén,Almacén en Biskek de Contoso,Activado,2006-08-13,,913,"Biskek shopping mall, Chuskaya Oblast Kyrgyzstan ",,50.0,480.0
+277,727,290,Almacén,Almacén nº 1 en Shanghai de Contoso,Activado,2004-02-14,,849,"China Shanghai, Jiading Distrct Yongguang Rd",,95.0,480.0
+278,733,291,Almacén,Almacén en Urumqi de Contoso,Activado,2005-07-15,,850,"Ulaanbaatar, Ulaanbaatar Mongolia",,50.0,480.0
+279,710,292,Almacén,Almacén en Pekín de Contoso,Activado,2008-07-16,,851,China Beijing Chaoyang distrct Shanlitun Rd,,86.0,480.0
+280,715,293,Almacén,Almacén en Guangzhou de Contoso,Activado,2009-07-17,,852,"China Guangzhou, Guangdong Tianhe Distrct ",,131.0,480.0
+281,727,290,Almacén,Almacén nº 2 en Shanghai de Contoso,Activado,2004-03-02,,853,"China Shanghai, Jiading Distrct Yongguang Rd",,95.0,480.0
+282,903,214,Almacén,Almacén nº 1 en Ottawa de Contoso,Activado,2004-04-09,,914,"Elgin Street, Ottawa,  Canada",,95.0,480.0
+283,903,214,Almacén,Almacén nº 2 en Ottawa de Contoso,Activado,2004-05-15,,915,"Carling Avenue, Ottawa, Canada",,95.0,480.0
+284,942,215,Almacén,Almacén nº 1 en Toronto de Contoso,Activado,2004-06-17,,916,"George St, Toronto, Canada",,95.0,480.0
+285,942,215,Almacén,Almacén nº 2 en Toronto de Contoso,Activado,2003-07-29,,917,"Chestnut Street, Toronto, Canada",,95.0,480.0
+286,942,215,Almacén,Almacén nº 3 en Toronto de Contoso,Activado,2004-08-20,,918," Dundas Street East, Toronto, Canada",,95.0,480.0
+287,881,216,Almacén,Almacén nº 1 en Montreal de Contoso,Activado,2004-09-12,,919,"Boulevard Decarie, Montreal Rd, Canada",,95.0,480.0
+288,881,216,Almacén,Almacén nº 2 en Montreal de Contoso,Activado,2003-02-13,,920,"De avenue du parc Shopping mall, Montréal, Canada",,95.0,480.0
+289,562,217,Almacén,Almacén nº 1 en Vancouver de Contoso,Activado,2004-11-25,,921,"Burrard Street, Vancouver, Canada",,95.0,480.0
+290,562,217,Almacén,Almacén nº 2 en Vancouver de Contoso,Activado,2004-12-26,,922,"Johnston Street, Vancouver, Canada",,95.0,480.0
+291,598,218,Almacén,Almacén en Calgary de Contoso,Activado,2004-05-27,,923,"209 4 Avenue Se, Calgary, Canada",,95.0,480.0
+292,731,272,Almacén,Almacén nº 2 en Thimphu de Contoso,Activado,2006-02-28,,924,"Clock Tower Shooping mall, Thimphu, Bhutan",,95.0,480.0
+293,716,273,Almacén,Almacén nº 2 en Hong Kong de Contoso,Activado,2007-03-29,,925,"Hong Kong, Kowloon Shopping mall",,95.0,480.0
+294,730,274,Almacén,Almacén nº 2 en Teherán de Contoso,Activado,2004-04-30,,926,"Seyfiyeh Davoodiyeh,second street, Tehran, Tehran, Iran",,95.0,480.0
+295,714,275,Almacén,Almacén nº 2 en Damasco de Contoso,Activado,2004-05-31,,927,"19th Nissan Street, Mezze Damascus, Syria",,95.0,480.0
+296,709,276,Almacén,Almacén nº 2 en Bangkok de Contoso,Activado,2005-06-01,,928,"Bangkok Citycenter, Thailand",,95.0,480.0
+297,764,277,Almacén,Almacén nº 2 en Moscú de Contoso,Activado,2004-07-02,,929,"Russia, 107561 District shopping mall",,95.0,480.0
+298,708,278,Almacén,Almacén nº 2 en Asjabad de Contoso,Activado,2006-11-06,,930,"West Street, Turkmenistan",,95.0,480.0
+299,717,279,Almacén,Almacén nº 2 en Islamabad de Contoso,Activado,2007-12-07,,931,"Citycenter, Islamabad Capital Territory, Pakistan",,95.0,480.0
+300,558,294,Almacén,Almacén nº 2 en Sidney de Contoso,Activado,2004-03-18,,932," PT St Sydney, Australia",,95.0,480.0
+301,724,283,Almacén,Almacén nº 2 en Osaka de Contoso,Activado,2007-03-19,,933,"Citycenter, BigOne Rd-KuOsakaOsaka, Japan",,95.0,480.0
+302,729,24,Almacén,Almacén en Taipei de Contoso,Activado,2004-07-19,,935,"Leidui Shopping mall, Taipei, Taiwan",,95.0,480.0
+303,757,25,Almacén,Almacén en Lisboa de Contoso,Activado,2004-09-20,,936,"Lisbon Citycenter, Lisboa Region",,95.0,480.0
+304,772,14,Almacén,Almacén en San Petersburgo de Contoso,Activado,2004-06-07,,942,"Saint Petersburg  Citycenter, Shopping mall",,95.0,480.0
+305,768,15,Almacén,Almacén en Nizhny Novgorod de Contoso,Activado,2004-03-15,,944,"Nizhny Novgorod  Downtown, Shopping mall",,95.0,480.0
+306,586,246,En línea,Tienda en línea en Europa de Contoso,Activado,2004-09-03,,945,"Downtown Berlin, Germany",,7.0,1000.0
+307,710,292,En línea,Tienda en línea en Asia de Contoso,Activado,2004-10-11,,946,China Beijing Chaoyang distrct Shanlitun Rd,,8.0,93800.0
+308,693,35,Distribuidor,Distribuidor en Norteamérica de Contoso,Activado,2004-03-08,,947,Seattle Shopping Mall,,15.0,450.0
+309,529,233,Distribuidor,Distribuidor en Europa de Contoso,Activado,2004-05-07,,948,France Shopping Mall,,12.0,551.0
+310,710,292,Distribuidor,Distribuidor en Asia de Contoso,Activado,2004-07-15,,949,Beijing Shopping Mall,,17.0,93800.0

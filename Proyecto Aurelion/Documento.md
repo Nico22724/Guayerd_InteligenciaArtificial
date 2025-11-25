@@ -314,7 +314,35 @@ Fin
                                (Regresa al menú principal)
                                
 ## Estadísticas descriptivas básicas calculadas
+
+---Estadisticas descriptivas de las ventas por fabricante:
+
+| Fabricante           | Total_Ventas |  Media | Mediana | Desviación Estándar  | Primer Cuartil  | Tercer Cuartil  | Rango Intercuartil  |
+|----------------------|--------------|--------|---------|----------------------|-----------------|-----------------|---------------------|
+| Contoso, Ltd         | 610462       | 859.81 | 560.5   | 1998.25              | 315.0           | 701.0           | 386.0               |
+| Wide World Importers | 88632        | 512.32 | 518.0   | 324.15               | 231.0           | 694.0           | 463.0               |
+| A. Datum Corporation | 78202        | 596.96 | 674.0   | 213.09               | 502.0           | 742.5           | 240.5               |
+| Fabrikam, Inc.       | 142443       | 533.49 | 559.0   | 206.72               | 416.0           | 686.5           | 270.5               |
+| Adventure Works      | 108880       | 567.08 | 551.0   | 379.71               | 299.0           | 669.5           | 370.5               |
+| The Phone Company    | 77760        | 511.58 | 608.5   | 261.96               | 241.25          | 715.25          | 474.0               |
+| Southridge Video     | 148937       | 775.71 | 586.0   | 851.70               | 410.75          | 726.5           | 315.75              |
+| Tailspin Toys        | 134377       | 933.17 | 628.0   | 937.86               | 511.25          | 780.0           | 268.75              |
+| Litware, Inc.        | 123321       | 467.12 | 494.0   | 223.67               | 289.0           | 652.25          | 363.25              |
+| Northwind Traders    | 19166        | 407.79 | 427.0   | 178.89               | 262.5           | 521.5           | 259.0               |
+| Proseware, Inc.      | 128422       | 526.32 | 587.0   | 237.49               | 329.5           | 706.25          | 376.75              |
+
+
+---Estadisticas descriptivas del monto total de ventas en linea:
+---Estadisticas descriptivas del monto total de ventas en fisico:
+---Estadisticas descriptivas del inventario disponible:
+
 ## Identificación del tipo de distribución de variables
+
+| Variable      | Tabla de Datos       | Histograma | Prueba de normalidad (D’Agostino–Pearson) | Prueba de Sesgo (Skewness) | Prueba de Curtosis (Kurtosis) | Tipo de distribución |
+|---------------|----------------------|------------|-------------------------------------------|----------------------------|-------------------------------|----------------------|
+|SalesAmount    | FactOnlineSales      | Sí         | D = 76,583.55, p < 0.0                    | Skewness = 3.63            | Kurtosis = 17.35              | Sesgado a la derecha |
+|OnHandQuantity | FactInventory        | Sí         | D = 266,848.14, p < 0.0                   | Skewness = 31.86           | Kurtosis = 2139.8             | Sesgado a la derecha |
+
 ## Análisis de correlaciones entre variables principales
 ### 📌 Monto de ventas --> Estado civil
 <h4>Conclusión final sobre el estado marital de una persona en las ventas</h4>
@@ -454,5 +482,107 @@ La significancia estadística sugiere una señal, pero no confirma una relación
 El verdadero impacto debe evaluarse mediante análisis adicionales que podrían refutar, confirmar o matizar los hallazgos actuales.
 
 ## Detección de outliers (valores extremos)
+
 ## Graficos
+
 ## Interpretación de resultados
+
+### 📌 Estadísticas descriptivas básicas
+
+### 📌 Distribucion
+
+#### 📌 Monto de ventas en linea
+
+    1️⃣ D’Agostino–Pearson
+
+    Estadístico = 76,583.55
+
+    p-value = 0.0
+
+    Interpretación:
+
+    p-value extremadamente pequeño → rechazamos la normalidad.
+
+    La distribución no es normal, igual que en la tabla anterior.
+
+
+    2️⃣ Skewness (asimetría)
+
+    Skewness = 3.63
+
+    Interpretación:
+
+    Positivo → sesgo fuertemente a la derecha.
+
+    Incluso más sesgado que la tabla anterior (antes era 2.93).
+
+    Hay muchos valores altos alejados del centro.
+
+
+    3️⃣ Kurtosis (apuntamiento)
+
+    Kurtosis = 17.35
+
+    Interpretación:
+
+    Muy mayor que 3 → colas extremadamente pesadas y distribución muy picuda.
+
+    Más extremos que la tabla anterior (antes era 10.85).
+
+
+    ✅ Conclusión:
+
+    La variable SalesAmount más sesgada y con valores extremos más frecuentes, lo que sugiere una distribución con colas más largas y mayor concentración de outliers grandes.
+
+    En análisis de ventas, esto es típico cuando hay pocos clientes con montos muy altos que “inflan” la distribución.
+
+#### 📌 Cantidad de articulos en el inventario
+
+    1️⃣ D’Agostino–Pearson
+
+    Estadístico = 266,848.14
+
+    p-value = 0.0
+
+    Interpretación:
+
+    p-value ≈ 0 → rechazamos la normalidad.
+
+    La variable no sigue ninguna distribución normal.
+
+
+    2️⃣ Skewness (asimetría)
+
+    Skewness = 31.86
+
+    Interpretación:
+
+    Positivo → sesgo fuertemente a la derecha.
+
+    ¡Extremadamente sesgado! La mayoría de los valores están muy concentrados en la parte baja, con algunos valores gigantes alejados del centro.
+
+
+    3️⃣ Kurtosis (apuntamiento)
+
+    Kurtosis = 2139.8
+
+    Interpretación:
+
+    Muchísimo mayor que 3 → colas extremadamente pesadas y distribución super picuda.
+
+    Esto indica que hay outliers gigantescos, muy alejados de la mayoría de los datos.
+
+
+    ✅ Resumen
+
+    La distribución de OnHandQuantity está muy lejos de ser normal.
+
+    Tiene un sesgo extremadamente fuerte a la derecha.
+
+    Presenta valores atípicos extremos que dominan la estadística de kurtosis.
+
+    Esto es típico de variables de inventario donde la mayoría de productos tienen cantidades bajas y unos pocos productos tienen cantidades enormes.
+
+### 📌 Outliers
+
+### 📌 Correlaciones

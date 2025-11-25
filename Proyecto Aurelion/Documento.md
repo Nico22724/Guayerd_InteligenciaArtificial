@@ -333,8 +333,44 @@ Fin
 
 
 ---Estadisticas descriptivas del monto total de ventas en linea:
+
+| Estadístico | SalesAmount      |
+|-------------|------------------|
+| count       | 100,000.0        |
+| mean        | 149.9283         |
+| std         | 221.1686         |
+| min         | 0.0              |
+| 25%         | 14.0845          |
+| 50%         | 89.1901          |
+| 75%         | 187.3173         | 
+| max         | 1,774.8275       |
+
 ---Estadisticas descriptivas del monto total de ventas en fisico:
+
+| Estadístico | SalesAmount      |
+|------------ |------------------|
+| count       | 100,000.0        |
+| mean        | 2,575.6844       |
+| std         | 3,778.9975       |
+| min         | 2.1408           |
+| 25%         | 430.9331         |
+| 50%         | 1,479.0141       |
+| 75%         | 3,202.0521       |
+| max         | 95,280.2113      |
+
 ---Estadisticas descriptivas del inventario disponible:
+
+| Estadístico | OnHandQuantity  |
+|-------------|-----------------|
+| count       | 100,000.0       |
+| mean        | 16.3511         |
+| std         | 32.2052         |
+| min         | 0.0             |
+| 25%         | 8.0             |
+| 50%         | 12.0            |
+| 75%         | 17.0            |
+| max         | 3,566.0         |
+
 
 ## Identificación del tipo de distribución de variables
 
@@ -483,7 +519,36 @@ El verdadero impacto debe evaluarse mediante análisis adicionales que podrían 
 
 ## Detección de outliers (valores extremos)
 
+---Estadisticas de outliers sobre el inventario disponible (OnHandQuantity):
+
+| Estadístico                 | Valores  |
+|-----------------------------|----------|
+| Q1                          | 8.0      |
+| Q3                          | 17.0     |
+| IQR                         | 9.0      |
+| Límite inferior             | -19.0    |
+| Límite superior             | 44.0     |
+| Cant outliers lim inferior  | 0.0      |
+| Cant outliers lim superior  | 3,213.0  |
+| Total Outliers              | 3,213.0  |
+
+---Estadisticas de outliers sobre el monto total de ventas en linea (SalesAmount):
+
+| Estadístico                 | Valores  |
+|-----------------------------|----------|
+| Q1                          | 11.3     |
+| Q3                          | 173.94   |
+| IQR                         | 162.64   |
+| Límite inferior             | -476.0   |
+| Límite superior             | 661.0    |
+| Cant outliers lim inferior  | 0.0      |
+| Cant outliers lim superior  | 1,728.0  |
+| Total Outliers              | 1,728.0  |
+
+
 ## Graficos
+
+---Estos se encuentran en el EDA.ipynb que esta en la carpeta de extras.
 
 ## Interpretación de resultados
 
@@ -585,4 +650,68 @@ El verdadero impacto debe evaluarse mediante análisis adicionales que podrían 
 
 ### 📌 Outliers
 
+#### 📌 Sobre la cantidad de articulos en el inventario
+
+✅ Conclusión sobre la eliminación de outliers en el inventario
+
+Tras aplicar el método IQR para detectar valores atípicos, el DataFrame pasó de 100.000 a 96.787 registros, lo que implica la eliminación de 3.213 valores (≈ 3.21%). Si bien este porcentaje no es extremadamente alto, sí es lo suficientemente significativo como para cuestionar el origen de estos outliers y su posible impacto en el análisis.
+
+La presencia de estos valores atípicos en la variable OnHandQuantity podría haber distorsionado cualquier análisis estadístico o modelo predictivo, especialmente aquellos relacionados con la gestión de inventario, la demanda y la planificación de compras. Sin embargo, antes de descartarlos completamente, es necesario evaluar si estos valores representan:
+
+1. Sobreabastecimiento temporal debido a temporadas de alta demanda.
+
+2. Crecimiento empresarial que implicó mayores niveles de stock.
+
+3. Productos específicos que requieren grandes volúmenes por su rotación.
+
+4. Compras en volumen por parte de compañías, especialmente considerando que en DimCustomer existe una variable que distingue entre clientes individuales y corporativos.
+
+5. Eventos inusuales o errores de registro que podrían revelar fallas en los procesos de control de inventario.
+
+Estas preguntas abren líneas de investigación importantes, ya que los outliers podrían contener información valiosa sobre comportamientos de negocio no evidentes a primera vista. Ignorarlos sin un análisis previo podría significar perder conocimiento clave.
+
+Si estos valores fueran producto de errores de captura, su magnitud (3.21%) sería alarmante para una empresa, especialmente tratándose de datos críticos como inventarios, que afectan decisiones operativas como reabastecimiento, compras, almacenamiento y previsión de ventas. Cualquier error sistemático en estos datos podría llevar a sobreabastecimiento, desabastecimiento o una interpretación falsa del inventario real disponible.
+
+Por ello, aunque trabajaremos con el DataFrame limpio para el análisis de correlaciones y estadísticas, es fundamental investigar la causa de estos outliers antes de concluir que deben ser descartados definitivamente. La calidad de los datos es determinante para la calidad de cualquier decisión empresarial.
+
+#### 📌 Sobre el monto total de ventas en linea
+
+✅Análisis de Ventas Tras Filtrado de Clientes Corporativos y Outliers
+
+Al eliminar las ventas correspondientes a clientes corporativos y filtrar los valores atípicos extremos por encima del percentil 99%, hemos logrado una distribución de montos de ventas más representativa y manejable para el análisis.
+
+Aunque se observan clientes con montos de venta superiores al límite del tercer cuartil (Q3), esta variabilidad es esperable en el contexto de ventas: clientes que adquieren productos de alta gama o en grandes cantidades pueden generar montos significativamente mayores que aquellos que compran productos más económicos o en menor volumen. En este caso, no es necesario eliminar estos valores, ya que representan una porción mínima de los datos y no afectan la representatividad de la muestra.
+
+Además, en análisis estadísticos y de correlación, estos valores atípicos son importantes, ya que permiten una interpretación más completa de los resultados y la generación de insights relevantes sobre el comportamiento de compra de los clientes. Es fundamental recordar que los outliers pueden reflejar patrones naturales de los datos y, en muchos casos, contienen información valiosa.
+
+En este sentido, la columna ClassName de la tabla DimProduct, que clasifica los productos en "Económica", "Normal" y "Deluxe", ofrece una oportunidad adicional para segmentar los datos. Analizar la distribución de montos de ventas por clase de producto podría revelar diferencias significativas y permitir identificar si ciertos segmentos presentan mayor presencia de outliers.
+
+Se recomienda realizar un análisis complementario para explorar estas diferencias y comprender mejor cómo la categoría del producto influye en los patrones de compra de los clientes, lo que puede ser útil para decisiones de segmentación, estrategias de marketing y optimización del portafolio de productos.
+
 ### 📌 Correlaciones
+
+📊 Conclusión General sobre los Factores que Influyen en los Montos de Ventas
+
+El análisis de los 100.000 registros revela que los montos de ventas están influenciados por diversas características demográficas y socioeconómicas de los clientes, aunque con distinta intensidad según la variable:
+
+✅ Factores con influencia significativa:
+
+Estado civil: Los clientes casados presentan, en promedio, mayores montos de venta que los solteros.
+
+Edad: Existe un patrón claro de comportamiento de compra según la edad, con segmentos etarios más propensos a gastar.
+
+Ingreso anual: Es uno de los factores más determinantes; los clientes con mayores ingresos realizan compras de mayor valor, mostrando una relación positiva entre capacidad económica y gasto.
+
+Nivel educativo: El nivel de educación se asocia a diferencias reales en los montos de venta, siendo un predictor relevante del comportamiento de compra.
+
+❎ Factores con influencia mínima o nula:
+
+Ocupación: No se encontraron diferencias significativas en las ventas según la ocupación del cliente.
+
+Número de hijos: La relación entre la cantidad de hijos y los montos de venta es muy débil, por lo que no es un predictor útil del gasto.
+
+✅Interpretación general:
+El comportamiento de compra de los clientes está más determinado por factores económicos y educativos que por la estructura familiar o el tipo de ocupación. Variables como ingreso, edad, estado civil y nivel educativo muestran patrones consistentes que pueden ser aprovechados para segmentación, marketing personalizado y estrategias de ventas. Por el contrario, variables como ocupación y número de hijos aportan poca información para explicar diferencias en los montos de ventas.
+
+Implicación práctica:
+Las estrategias comerciales deben enfocarse en identificar y priorizar a los segmentos de clientes con mayor capacidad de gasto y propensión a comprar, basándose principalmente en edad, estado civil, nivel educativo e ingresos. Las variables de menor impacto pueden ser consideradas secundarias o complementarias en análisis predictivos o segmentación avanzada.

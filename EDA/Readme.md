@@ -1,0 +1,402 @@
+## Estadísticas descriptivas básicas calculadas
+
+---Estadisticas descriptivas de las ventas por fabricante:
+
+| Fabricante           | Total_Ventas |  Media | Mediana | Desviación Estándar  | Primer Cuartil  | Tercer Cuartil  | Rango Intercuartil  |
+|----------------------|--------------|--------|---------|----------------------|-----------------|-----------------|---------------------|
+| Contoso, Ltd         | 610462       | 859.81 | 560.5   | 1998.25              | 315.0           | 701.0           | 386.0               |
+| Wide World Importers | 88632        | 512.32 | 518.0   | 324.15               | 231.0           | 694.0           | 463.0               |
+| A. Datum Corporation | 78202        | 596.96 | 674.0   | 213.09               | 502.0           | 742.5           | 240.5               |
+| Fabrikam, Inc.       | 142443       | 533.49 | 559.0   | 206.72               | 416.0           | 686.5           | 270.5               |
+| Adventure Works      | 108880       | 567.08 | 551.0   | 379.71               | 299.0           | 669.5           | 370.5               |
+| The Phone Company    | 77760        | 511.58 | 608.5   | 261.96               | 241.25          | 715.25          | 474.0               |
+| Southridge Video     | 148937       | 775.71 | 586.0   | 851.70               | 410.75          | 726.5           | 315.75              |
+| Tailspin Toys        | 134377       | 933.17 | 628.0   | 937.86               | 511.25          | 780.0           | 268.75              |
+| Litware, Inc.        | 123321       | 467.12 | 494.0   | 223.67               | 289.0           | 652.25          | 363.25              |
+| Northwind Traders    | 19166        | 407.79 | 427.0   | 178.89               | 262.5           | 521.5           | 259.0               |
+| Proseware, Inc.      | 128422       | 526.32 | 587.0   | 237.49               | 329.5           | 706.25          | 376.75              |
+
+
+---Estadisticas descriptivas del monto total de ventas en linea:
+
+| Estadístico | SalesAmount      |
+|-------------|------------------|
+| count       | 100,000.0        |
+| mean        | 149.9283         |
+| std         | 221.1686         |
+| min         | 0.0              |
+| 25%         | 14.0845          |
+| 50%         | 89.1901          |
+| 75%         | 187.3173         | 
+| max         | 1,774.8275       |
+
+---Estadisticas descriptivas del monto total de ventas en fisico:
+
+| Estadístico | SalesAmount      |
+|------------ |------------------|
+| count       | 100,000.0        |
+| mean        | 2,575.6844       |
+| std         | 3,778.9975       |
+| min         | 2.1408           |
+| 25%         | 430.9331         |
+| 50%         | 1,479.0141       |
+| 75%         | 3,202.0521       |
+| max         | 95,280.2113      |
+
+---Estadisticas descriptivas del inventario disponible:
+
+| Estadístico | OnHandQuantity  |
+|-------------|-----------------|
+| count       | 100,000.0       |
+| mean        | 16.3511         |
+| std         | 32.2052         |
+| min         | 0.0             |
+| 25%         | 8.0             |
+| 50%         | 12.0            |
+| 75%         | 17.0            |
+| max         | 3,566.0         |
+
+
+## Identificación del tipo de distribución de variables
+
+| Variable      | Tabla de Datos       | Histograma | Prueba de normalidad (D’Agostino–Pearson) | Prueba de Sesgo (Skewness) | Prueba de Curtosis (Kurtosis) | Tipo de distribución |
+|---------------|----------------------|------------|-------------------------------------------|----------------------------|-------------------------------|----------------------|
+|SalesAmount    | FactOnlineSales      | Sí         | D = 76,583.55, p < 0.0                    | Skewness = 3.63            | Kurtosis = 17.35              | Sesgado a la derecha |
+|OnHandQuantity | FactInventory        | Sí         | D = 266,848.14, p < 0.0                   | Skewness = 31.86           | Kurtosis = 2139.8             | Sesgado a la derecha |
+
+## Análisis de correlaciones entre variables principales
+### 📌 Monto de ventas --> Estado civil
+<h4>Conclusión final sobre el estado marital de una persona en las ventas</h4>
+
+Con base en los 100.000 registros analizados, Se aplicó una prueba t de Welch para comparar los montos de ventas entre clientes casados (M) y solteros (S). El resultado fue estadísticamente significativo (t = 10.91, p < 0.0001), indicando que existen diferencias claras entre ambos grupos. En promedio, los clientes casados presentan montos de 
+venta mayores que los solteros. Aunque la variabilidad dentro de cada grupo es alta, la diferencia en medias es consistente y robusta.
+
+### 📌 Monto de ventas --> Ocupación
+<h4>Conclusión final sobre la influencia de la ocupacion de los clientes en las ventas </h4>
+
+Con base en los 100.000 registros analizados, el test de Kruskal-Wallis arrojó H = 0.0 y p = 1.0, lo que indica que no existen diferencias significativas en los montos de ventas entre las distintas ocupaciones (Profesional, Manual, Clerical, etc.). Por lo tanto, no se encontró evidencia de que la ocupación del cliente influya en las ventas; cualquier diferencia observada es atribuible a la variabilidad natural de los datos.
+
+### 📌 Monto de ventas --> Edad
+<h4>Conclusión Final sobre la Influencia de la Edad en las Ventas </h4>
+
+Con base en los 100.000 registros analizados: El análisis realizado mediante la prueba no paramétrica Kruskal–Wallis reveló diferencias estadísticamente significativas en los montos de ventas entre los distintos grupos de edad.<br> El estadístico obtenido (H = 81.55) y el valor p extremadamente pequeño (p = 9.90 × 10 - 17) indican que la probabilidad de que estas diferencias se deban al azar es prácticamente nula.<br>
+En consecuencia, se rechaza la hipótesis nula y se concluye que: <br>
+
+✔️ La edad del cliente influye de manera significativa en el nivel de gasto.<br>
+
+Esto implica que: <br>
+
+1. Los grupos de edad no presentan el mismo comportamiento de compra. <br>
+
+2. Existen segmentos etarios con mayor propensión de gasto y otros con menor influencia en las ventas.<br>
+
+3. El factor edad debe considerarse dentro de estrategias de marketing, segmentación de clientes y análisis de comportamiento de compra.<br>
+
+### 📌 Monto de ventas --> Cuanto gana al año
+<h4>Conclusión Final sobre la Influencia de lo que gana el Cliente en las Ventas </h4>
+
+Con base en los 100.000 registros analizados: El análisis realizado mediante la prueba no paramétrica Kruskal–Wallis reveló diferencias estadísticamente significativas en los montos de ventas entre los distintos grupos de ingresos anuales. <br> El estadístico obtenido (H = 374.78) y el valor p es inexistente siendo este valor tan pequeño podemos decir que (p = 0) indican que la probabilidad de que estas diferencias se deban al azar es prácticamente nula.<br>
+En consecuencia, se rechaza la hipótesis nula y se concluye que: <br>
+
+✔️ Lo que gana el cliente influye de manera significativa en el nivel de gasto.<br>
+
+Esto implica que: <br>
+
+1. Los grupos de ingresos presentan diferencias marcadas en sus patrones de compra, lo que indica que el gasto no solo varía, sino que varía de forma consistente según el nivel económico del cliente.
+
+2. Los clientes con mayores ingresos tienden a realizar compras de mayor valor, lo que sugiere una relación positiva entre capacidad adquisitiva y monto gastado.
+
+3. El ingreso del cliente emerge como un predictor clave del comportamiento de compra, útil para modelos de segmentación, análisis de clientes o predicción de ventas.
+
+4. Existen oportunidades para diseñar estrategias de marketing diferenciadas según el nivel de ingreso, como promociones personalizadas, productos premium o descuentos dirigidos.
+
+5. La variación por nivel de ingreso es más significativa que otras variables analizadas, lo que resalta su importancia como una de las principales variables explicativas del monto de ventas.
+
+### 📌 Monto de ventas --> Cuantos hijos tiene
+<h4>Conclusión Final sobre la Influencia de cuantos hijos tiene el Cliente en las Ventas </h4>
+
+Con base en los 100.000 registros analizados: Analizando la correlación de Spearman entre el número total de hijos y los montos de ventas fue muy baja (rho = 0.075), indicando una relación extremadamente débil. Aunque el valor p fue significativo (p < 0.0001), la magnitud del coeficiente revela que el número de hijos no influye de manera relevante en el nivel de ventas. En consecuencia, TotalChildren no es un predictor útil del comportamiento de compra.
+
+### 📌 Monto de ventas --> Cual es su nivel educativo
+<h4>Conclusión Final sobre la Influencia del Nivel Educativo del Cliente en las Ventas</h4>
+
+Con base en los 100.000 registros analizados, la prueba no paramétrica de Kruskal–Wallis evidenció diferencias estadísticamente significativas entre los grupos de nivel educativo en relación con los montos de venta. El estadístico obtenido (H = 344.02) y el valor p extremadamente pequeño (p ≈ 3.42×10⁻⁷³) indican que la probabilidad de que estas diferencias sean producto del azar es prácticamente nula.
+
+En consecuencia, se rechaza la hipótesis nula y se concluye que:
+
+✔️ El nivel educativo del cliente influye significativamente en el monto de ventas.
+
+Esto implica que:
+
+1. Los distintos niveles educativos muestran comportamientos de compra distintos.
+
+2. Algunos segmentos educativos presentan una mayor propensión al gasto, mientras que otros muestran un menor nivel de ventas.
+
+3. La variable educación debe ser considerada en estrategias de segmentación, marketing y análisis del comportamiento del cliente, dado que está asociada a diferencias reales en el consumo.
+
+### 📌 Conclusion Final 
+🧾 Conclusión Final (Crítica) sobre el análisis de Kruskal–Wallis
+
+Si bien la prueba Kruskal–Wallis arrojó diferencias estadísticamente significativas entre las distintas variables usadas en relación con los montos de ventas, es importante subrayar que estos resultados no deben interpretarse como evidencia definitiva de que influya de manera real, directa o relevante en el comportamiento de compra.
+
+El valor p extremadamente pequeño indica que al menos dos grupos difieren. Sin embargo, este hallazgo debe tomarse con cautela por varias razones:
+
+1. Significancia estadística no es igual a significancia práctica
+
+    Con 100.000 registros, incluso diferencias mínimas pueden producir valores p muy pequeños.
+    Esto puede llevar a conclusiones exageradas si no se evalúa:
+
+    la magnitud del efecto,
+
+    las medianas,
+
+    los rangos intercuartiles,
+
+    y la relevancia comercial real.
+
+    Es posible que las diferencias observadas, aunque estadísticamente detectables, sean pequeñas o irrelevantes para la toma de decisiones del negocio.
+
+2. El Kruskal–Wallis no identifica qué grupos difieren
+
+    La prueba solo informa que "existe al menos una diferencia", pero no especifica entre por ejemplo qué niveles educativos ocurre ni cuán grandes son esas diferencias.
+    Pruebas post-hoc como Dunn o Conover son esenciales para validar si los grupos realmente presentan comportamientos distintos. Sin ellas, el hallazgo queda incompleto.
+
+3. No implica causalidad ni una relación natural
+
+    El resultado no significa que exista una relación directa o innata.
+    Es posible que otras variables altamente correlacionadas — como ejemplo ingresos, ocupación, tipo de productos adquiridos o número de hijos— sean las verdaderas responsables del patrón observado.
+
+    Sin controlar estos factores, el hallazgo puede ser espurio o confuso.
+
+4. Posible efecto de distribuciones no normales o presencia de outliers
+
+    Los montos de ventas suelen tener distribuciones sesgadas con colas largas.
+    Aunque Kruskal–Wallis es robusto a la no normalidad, las diferencias significativas pueden ser impulsadas por:
+
+    valores extremos,
+
+    grupos altamente desbalanceados,
+
+    o diferencias en la dispersión más que en la tendencia central.
+
+    Esto puede generar una falsa percepción de diferencia real entre los grupos.
+
+5. Validación cruzada necesaria
+
+    Para fortalecer o refutar el hallazgo, es recomendable:
+
+    aplicar pruebas post-hoc,
+
+    calcular tamaño del efecto (η² o ε²),
+
+    ejecutar modelos multivariables,
+
+    o repetir el análisis en subconjuntos mediante bootstrap o sampleo aleatorio.
+
+    Solo con estas validaciones adicionales puede confirmarse si las diferencias son consistentes, robustas y relevantes en la práctica.
+
+✔️ Conclusión General
+
+Aunque el análisis Kruskal–Wallis indica diferencias estadísticamente significativas entre las diferentes analisis de correlaciones, estos resultados no deben interpretarse de forma aislada ni tomarse como evidencia firme de un patrón real en el comportamiento de compra.
+
+La significancia estadística sugiere una señal, pero no confirma una relación fuerte, práctica ni causal.
+El verdadero impacto debe evaluarse mediante análisis adicionales que podrían refutar, confirmar o matizar los hallazgos actuales.
+
+## Detección de outliers (valores extremos)
+
+---Estadisticas de outliers sobre el inventario disponible (OnHandQuantity):
+
+| Estadístico                 | Valores  |
+|-----------------------------|----------|
+| Q1                          | 8.0      |
+| Q3                          | 17.0     |
+| IQR                         | 9.0      |
+| Límite inferior             | -19.0    |
+| Límite superior             | 44.0     |
+| Cant outliers lim inferior  | 0.0      |
+| Cant outliers lim superior  | 3,213.0  |
+| Total Outliers              | 3,213.0  |
+
+---Estadisticas de outliers sobre el monto total de ventas en linea (SalesAmount):
+
+| Estadístico                 | Valores  |
+|-----------------------------|----------|
+| Q1                          | 11.3     |
+| Q3                          | 173.94   |
+| IQR                         | 162.64   |
+| Límite inferior             | -476.0   |
+| Límite superior             | 661.0    |
+| Cant outliers lim inferior  | 0.0      |
+| Cant outliers lim superior  | 1,728.0  |
+| Total Outliers              | 1,728.0  |
+
+
+## Graficos
+
+---Estos se encuentran en el EDA.ipynb que esta en la carpeta de extras.
+
+## Interpretación de resultados
+
+### 📌 Estadísticas descriptivas básicas
+
+### 📌 Distribucion
+
+#### 📌 Monto de ventas en linea
+
+    1️⃣ D’Agostino–Pearson
+
+    Estadístico = 76,583.55
+
+    p-value = 0.0
+
+    Interpretación:
+
+    p-value extremadamente pequeño → rechazamos la normalidad.
+
+    La distribución no es normal, igual que en la tabla anterior.
+
+
+    2️⃣ Skewness (asimetría)
+
+    Skewness = 3.63
+
+    Interpretación:
+
+    Positivo → sesgo fuertemente a la derecha.
+
+    Incluso más sesgado que la tabla anterior (antes era 2.93).
+
+    Hay muchos valores altos alejados del centro.
+
+
+    3️⃣ Kurtosis (apuntamiento)
+
+    Kurtosis = 17.35
+
+    Interpretación:
+
+    Muy mayor que 3 → colas extremadamente pesadas y distribución muy picuda.
+
+    Más extremos que la tabla anterior (antes era 10.85).
+
+
+    ✅ Conclusión:
+
+    La variable SalesAmount más sesgada y con valores extremos más frecuentes, lo que sugiere una distribución con colas más largas y mayor concentración de outliers grandes.
+
+    En análisis de ventas, esto es típico cuando hay pocos clientes con montos muy altos que “inflan” la distribución.
+
+#### 📌 Cantidad de articulos en el inventario
+
+    1️⃣ D’Agostino–Pearson
+
+    Estadístico = 266,848.14
+
+    p-value = 0.0
+
+    Interpretación:
+
+    p-value ≈ 0 → rechazamos la normalidad.
+
+    La variable no sigue ninguna distribución normal.
+
+
+    2️⃣ Skewness (asimetría)
+
+    Skewness = 31.86
+
+    Interpretación:
+
+    Positivo → sesgo fuertemente a la derecha.
+
+    ¡Extremadamente sesgado! La mayoría de los valores están muy concentrados en la parte baja, con algunos valores gigantes alejados del centro.
+
+
+    3️⃣ Kurtosis (apuntamiento)
+
+    Kurtosis = 2139.8
+
+    Interpretación:
+
+    Muchísimo mayor que 3 → colas extremadamente pesadas y distribución super picuda.
+
+    Esto indica que hay outliers gigantescos, muy alejados de la mayoría de los datos.
+
+
+    ✅ Resumen
+
+    La distribución de OnHandQuantity está muy lejos de ser normal.
+
+    Tiene un sesgo extremadamente fuerte a la derecha.
+
+    Presenta valores atípicos extremos que dominan la estadística de kurtosis.
+
+    Esto es típico de variables de inventario donde la mayoría de productos tienen cantidades bajas y unos pocos productos tienen cantidades enormes.
+
+### 📌 Outliers
+
+#### 📌 Sobre la cantidad de articulos en el inventario
+
+✅ Conclusión sobre la eliminación de outliers en el inventario
+
+Tras aplicar el método IQR para detectar valores atípicos, el DataFrame pasó de 100.000 a 96.787 registros, lo que implica la eliminación de 3.213 valores (≈ 3.21%). Si bien este porcentaje no es extremadamente alto, sí es lo suficientemente significativo como para cuestionar el origen de estos outliers y su posible impacto en el análisis.
+
+La presencia de estos valores atípicos en la variable OnHandQuantity podría haber distorsionado cualquier análisis estadístico o modelo predictivo, especialmente aquellos relacionados con la gestión de inventario, la demanda y la planificación de compras. Sin embargo, antes de descartarlos completamente, es necesario evaluar si estos valores representan:
+
+1. Sobreabastecimiento temporal debido a temporadas de alta demanda.
+
+2. Crecimiento empresarial que implicó mayores niveles de stock.
+
+3. Productos específicos que requieren grandes volúmenes por su rotación.
+
+4. Compras en volumen por parte de compañías, especialmente considerando que en DimCustomer existe una variable que distingue entre clientes individuales y corporativos.
+
+5. Eventos inusuales o errores de registro que podrían revelar fallas en los procesos de control de inventario.
+
+Estas preguntas abren líneas de investigación importantes, ya que los outliers podrían contener información valiosa sobre comportamientos de negocio no evidentes a primera vista. Ignorarlos sin un análisis previo podría significar perder conocimiento clave.
+
+Si estos valores fueran producto de errores de captura, su magnitud (3.21%) sería alarmante para una empresa, especialmente tratándose de datos críticos como inventarios, que afectan decisiones operativas como reabastecimiento, compras, almacenamiento y previsión de ventas. Cualquier error sistemático en estos datos podría llevar a sobreabastecimiento, desabastecimiento o una interpretación falsa del inventario real disponible.
+
+Por ello, aunque trabajaremos con el DataFrame limpio para el análisis de correlaciones y estadísticas, es fundamental investigar la causa de estos outliers antes de concluir que deben ser descartados definitivamente. La calidad de los datos es determinante para la calidad de cualquier decisión empresarial.
+
+#### 📌 Sobre el monto total de ventas en linea
+
+✅Análisis de Ventas Tras Filtrado de Clientes Corporativos y Outliers
+
+Al eliminar las ventas correspondientes a clientes corporativos y filtrar los valores atípicos extremos por encima del percentil 99%, hemos logrado una distribución de montos de ventas más representativa y manejable para el análisis.
+
+Aunque se observan clientes con montos de venta superiores al límite del tercer cuartil (Q3), esta variabilidad es esperable en el contexto de ventas: clientes que adquieren productos de alta gama o en grandes cantidades pueden generar montos significativamente mayores que aquellos que compran productos más económicos o en menor volumen. En este caso, no es necesario eliminar estos valores, ya que representan una porción mínima de los datos y no afectan la representatividad de la muestra.
+
+Además, en análisis estadísticos y de correlación, estos valores atípicos son importantes, ya que permiten una interpretación más completa de los resultados y la generación de insights relevantes sobre el comportamiento de compra de los clientes. Es fundamental recordar que los outliers pueden reflejar patrones naturales de los datos y, en muchos casos, contienen información valiosa.
+
+En este sentido, la columna ClassName de la tabla DimProduct, que clasifica los productos en "Económica", "Normal" y "Deluxe", ofrece una oportunidad adicional para segmentar los datos. Analizar la distribución de montos de ventas por clase de producto podría revelar diferencias significativas y permitir identificar si ciertos segmentos presentan mayor presencia de outliers.
+
+Se recomienda realizar un análisis complementario para explorar estas diferencias y comprender mejor cómo la categoría del producto influye en los patrones de compra de los clientes, lo que puede ser útil para decisiones de segmentación, estrategias de marketing y optimización del portafolio de productos.
+
+### 📌 Correlaciones
+
+📊 Conclusión General sobre los Factores que Influyen en los Montos de Ventas
+
+El análisis de los 100.000 registros revela que los montos de ventas están influenciados por diversas características demográficas y socioeconómicas de los clientes, aunque con distinta intensidad según la variable:
+
+✅ Factores con influencia significativa:
+
+Estado civil: Los clientes casados presentan, en promedio, mayores montos de venta que los solteros.
+
+Edad: Existe un patrón claro de comportamiento de compra según la edad, con segmentos etarios más propensos a gastar.
+
+Ingreso anual: Es uno de los factores más determinantes; los clientes con mayores ingresos realizan compras de mayor valor, mostrando una relación positiva entre capacidad económica y gasto.
+
+Nivel educativo: El nivel de educación se asocia a diferencias reales en los montos de venta, siendo un predictor relevante del comportamiento de compra.
+
+❎ Factores con influencia mínima o nula:
+
+Ocupación: No se encontraron diferencias significativas en las ventas según la ocupación del cliente.
+
+Número de hijos: La relación entre la cantidad de hijos y los montos de venta es muy débil, por lo que no es un predictor útil del gasto.
+
+✅Interpretación general:
+El comportamiento de compra de los clientes está más determinado por factores económicos y educativos que por la estructura familiar o el tipo de ocupación. Variables como ingreso, edad, estado civil y nivel educativo muestran patrones consistentes que pueden ser aprovechados para segmentación, marketing personalizado y estrategias de ventas. Por el contrario, variables como ocupación y número de hijos aportan poca información para explicar diferencias en los montos de ventas.
+
+Implicación práctica:
+Las estrategias comerciales deben enfocarse en identificar y priorizar a los segmentos de clientes con mayor capacidad de gasto y propensión a comprar, basándose principalmente en edad, estado civil, nivel educativo e ingresos. Las variables de menor impacto pueden ser consideradas secundarias o complementarias en análisis predictivos o segmentación avanzada.

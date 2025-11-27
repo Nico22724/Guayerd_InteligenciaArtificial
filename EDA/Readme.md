@@ -241,7 +241,7 @@ El verdadero impacto debe evaluarse mediante análisis adicionales que podrían 
 
 ### 📌 Distribucion
 
-#### 📌 Monto de ventas en linea
+#### Monto de ventas en linea
 
     1️⃣ D’Agostino–Pearson
 
@@ -286,7 +286,7 @@ El verdadero impacto debe evaluarse mediante análisis adicionales que podrían 
 
     En análisis de ventas, esto es típico cuando hay pocos clientes con montos muy altos que “inflan” la distribución.
 
-#### 📌 Cantidad de articulos en el inventario
+#### Cantidad de articulos en el inventario
 
     1️⃣ D’Agostino–Pearson
 
@@ -335,7 +335,7 @@ El verdadero impacto debe evaluarse mediante análisis adicionales que podrían 
 
 ### 📌 Outliers
 
-#### 📌 Sobre la cantidad de articulos en el inventario
+#### Sobre la cantidad de articulos en el inventario
 
 ✅ Conclusión sobre la eliminación de outliers en el inventario
 
@@ -359,7 +359,7 @@ Si estos valores fueran producto de errores de captura, su magnitud (3.21%) ser�
 
 Por ello, aunque trabajaremos con el DataFrame limpio para el análisis de correlaciones y estadísticas, es fundamental investigar la causa de estos outliers antes de concluir que deben ser descartados definitivamente. La calidad de los datos es determinante para la calidad de cualquier decisión empresarial.
 
-#### 📌 Sobre el monto total de ventas en linea
+#### Sobre el monto total de ventas en linea
 
 ✅Análisis de Ventas Tras Filtrado de Clientes Corporativos y Outliers
 
@@ -373,7 +373,7 @@ En este sentido, la columna ClassName de la tabla DimProduct, que clasifica los 
 
 Se recomienda realizar un análisis complementario para explorar estas diferencias y comprender mejor cómo la categoría del producto influye en los patrones de compra de los clientes, lo que puede ser útil para decisiones de segmentación, estrategias de marketing y optimización del portafolio de productos.
 
-### 📌 Correlaciones
+### Correlaciones
 
 📊 Conclusión General sobre los Factores que Influyen en los Montos de Ventas
 
